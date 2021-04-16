@@ -1,23 +1,23 @@
 
 import numpy as np 
 
-#size
-N = int(input('enter size: ' or 3))
-#auto gen function
+#size of the function
+N = 5
+#gen random function, with size N
 np.random.shuffle(function:=np.arange(N))
 
-# Custom 
+# Custom
 # function = np.array([0,1,2])
-# N = len()
+# N = len(function)
 
 def main ():
     state = func_apply()#initial state
-    i = 0# nomber of iterations
+    i = 0#nomber of iterations
     while not np.array_equal(state, np.arange(N)):
         state = func_apply(state)
-        print(state)
+        print(f"\nf() after{i} iterations\n{function}")
         i+=1
-    print (f"\nf() is reapeating it's self after {i} iteration\n{function}")
+    print (f"\nf() is reapeating it's self after {i} iterations\n{function}")
 
 def func_apply(array=np.arange(N)) -> np.array:
     return array[function]
