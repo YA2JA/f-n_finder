@@ -15,7 +15,7 @@ def main ():
     i = 0#nomber of iterations
     while not np.array_equal(state, np.arange(N)):
         state = func_apply(state)
-        print(f"\nf() after{i} iterations\n{function}")
+        print(f"\nf() after{i} iterations\n{state}")
         i+=1
     print (f"\nf() is reapeating it's self after {i} iterations\n{function}")
 
